@@ -50,22 +50,22 @@ body {
 }
 section{
   max-width: 120rem;
-    z-index: 1000;
     width:100%;
       
 
 }
 
 header{
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   margin-top: 0;
-  position: fixed;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background: #fff;
   height: 8rem;
   width:100%;
+      z-index: 1000;
+
   padding: 4rem 2rem;
   box-shadow: -.1rem -.1rem 1rem .1rem #222;
 }
@@ -84,11 +84,10 @@ p{
 }
 
 .logo{
-  display: flex;
   font-size:2rem ;
-padding-bottom: 2rem;
+padding-bottom: 5rem;
+display:flex;
 position: relative;
-  margin-top: 0;
 }
 nav{
   display:flex;
@@ -102,6 +101,7 @@ nav a{
     position: relative;
     cursor: pointer;
 }
+
 nav a::after{
 content: '';
   width: 0;
@@ -110,11 +110,12 @@ content: '';
   background:#333;
   left:0;
   color:white;
-  bottom: -.5rem;
+  bottom: 1rem;
   transition: 0.5s;
 }
-nav a:hover::after{
+nav a:hover::after , nav a.active::after{
   width: 100%;
+  font-weight: 500;
 }
 #menu-btu{
   display: none;
@@ -168,9 +169,11 @@ cursor: pointer;
 .hero{
   margin-bottom: 2rem;
     margin-top: 0rem;
+  z-index: -1;
 
   background-image: url("img/hero4.png");
   height: 50rem;
+  
   width:100%;
   background-repeat: none;
   background-size: cover;
@@ -187,6 +190,7 @@ cursor: pointer;
   position: relative;
 }
 .hero h1{
+  
   font-size: 2.5rem;
   color:#777;
 }
@@ -204,6 +208,8 @@ cursor: pointer;
 }
 
  .about .fev{
+     z-index: -1;
+
    display: flex;
    flex:wrap;
    gap:1rem;
@@ -212,6 +218,8 @@ cursor: pointer;
    align-items: center;
  }
  .about .fev .item{
+     z-index: -1;
+
    background: #fff;
    padding: 1rem;
    width:14rem;
@@ -263,7 +271,7 @@ cursor: pointer;
      
    }
   .product-main .pro-item{
-
+  border-radius: 1.5rem;
     height: fit-content;
     width: 30rem;
     background: #fff;
@@ -272,7 +280,8 @@ cursor: pointer;
   }
 
   .product-main .pro-item .img img{
-    width: 100%;
+    width:28rem;
+    height: 31.5rem;
   }
   
     .product-main .pro-item .cantener{
@@ -301,11 +310,15 @@ cursor: pointer;
         }
         
        .product-main .pro-item a{
-         font-size: 2rem;
-         color:#333;
+         font-size: 3rem;
+         color:var(--black);
+         background: #fff;
+         border-radius: 50%;
+         padding: 1rem;
          position: relative;
-         right: 1.5rem;
-         bottom: 1.5rem;
+         bottom: 0rem;
+         margin-left: 80%;
+         margin-bottom: 5rem;
        }
        
       .product-main .pro-item .cantener .button{
@@ -317,6 +330,7 @@ cursor: pointer;
 
 .benner{
   width: 100%;
+  z-index: -1;
   text-align: center;
       background-image: url("img/banner/b2.jpg");
   height: 20rem;
@@ -343,13 +357,14 @@ cursor: pointer;
 
 .benner  .cantener p{
   color:#ccc;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 100;
   margin-bottom: .8rem;
 
 }
 .benner .cantener h1{
   font-size: 3.5rem;
-  font-weight: 500;
+  font-weight: 600;
   color:#eee;
 }
 
@@ -387,9 +402,9 @@ cursor: pointer;
 
 .benner1  .cantener h2{
   color:#fff;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: .8rem;
-  font-weight: 300;
+  font-weight: 100;
 
 }
 .benner1 .cantener h1{
@@ -522,6 +537,147 @@ cursor: pointer;
 
  }
  
+ .news{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+      background-image: url("img/banner/1.jpg");
+
+   height: 20rem;
+   padding: 5% 2rem;
+ }
+ 
+ .news .new{
+   color: #fff;
+   font-size: 2.5rem;
+   line-height: 3.5rem;
+ }
+ 
+  .news .new h1{
+       font-size: 2rem;
+
+    font-weight: 300;
+  }
+.news .sing-in input{
+  border: none;
+  outline: none;
+  color:#333;
+  background: #fff;
+  padding: 1rem;
+  
+}
+
+ .news .sing-in .btn{
+      padding: 1rem;
+
+ }
+
+ 
+ /*-----style in sproduct.html page---*/
+.single-product{
+  width:100%;
+  margin: 2rem 0 2rem 0;
+}
+
+.single-product p{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.single-product .single-product-main{
+  display: flex;
+  width: 100%;
+      gap:1rem;
+  flex-wrap: wrap;
+align-items: center;
+  flex-direction: row;
+}
+
+.single-product .single-product-main .single-product-img{
+    gap:1rem;
+flex:1 1 40rem;
+  flex-direction: column;
+  width:100%;
+}
+
+
+.single-product .single-product-main      .single-product-detile{
+  display:flex;
+  flex:1 1 40rem;
+  width:100%;
+line-height: 3.5rem;
+  flex-direction: column;
+}
+
+.single-product .single-product-main .single-product-img .single-product-main-img{
+     display:flex;
+}
+
+
+.single-product .single-product-main .single-product-img .single-product-main-img img{
+  width:100%;
+  margin-bottom: 1rem
+}
+.single-product .single-product-main .single-product-img .single-product-row-img{
+    flex-basis: 28%;
+   display:flex;
+   gap:1rem;
+}
+
+
+.single-product .single-product-main .single-product-img .single-product-row-img img{
+  width: 100%;
+}
+
+.single-product .single-product-main .single-product-detile h6 {
+ font-size: 3rem;
+ font-weight: 200;
+}
+.single-product .single-product-main .single-product-detile h4{
+  font-size: 2.5rem;
+  color:#333;
+  font-weight: 500;
+  margin:3rem 0 3rem 0;
+}
+
+.single-product .single-product-main .single-product-detile h1{
+  font-size: 4rem;
+  font-weight: 100;
+  color:#333;
+}
+
+.single-product .single-product-main .single-product-detile .number{
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.single-product .single-product-main .single-product-detile select{
+  padding: 1rem;
+  margin: 1rem 1.5rem 0rem  0rem;
+  width: 30%;
+  outline: none;
+}
+.single-product .single-product-main .single-product-detile input {
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 30%;
+  outline: none;
+}
+
+.single-product .single-product-main .single-product-detile .button{
+  width: 40%;
+  padding: 0rem;
+  border-radius: 1rem;
+    margin-top: 1rem;
+background: #2FDEC2;
+border: none;
+color: #eee;
+}
+.single-product .single-product-main .single-product-detile .button:hover{
+  background: #2B9D8B;
+
+}
 
 /*------------home page css------------*/
 
@@ -670,10 +826,10 @@ margin-top:0;
   text-align: center;
   font-size: 4rem;
   font-weight: 800;
-  text-transform: uppercase;
   width:100%; 
+  text-transform:  capitalize;
   margin-top:1.5rem;
-  margin-bottom:0rem;  
+  margin-bottom:.3rem;  
 }
 .heading span{
   color: var(--red);
@@ -1025,7 +1181,9 @@ flex-wrap: wrap;
 }
 }
 
-
+  .product-main .pro-item .img img {
+    width: 100%;
+  }
 .navbar{
   display: none;
   margin-top:0;
@@ -1034,6 +1192,20 @@ flex-wrap: wrap;
   background: transparent;
   
 }
+
+.navbar a ion-icon{
+         
+         font-size: 3rem;
+         color:#333;
+         background: #fff;
+         border-radius: 50%;
+         padding: 1rem;
+         position: relative;
+         bottom: 0rem;
+         margin-left: 80%;
+       }
+       
+
 .navbar .container{
   box-shadow: 0rem 0rem 1rem .1rem #333;
 }
@@ -1176,13 +1348,23 @@ nav a:hover{
 margin-top:0;
 
 }
-
+  .logo {
+    display: inline-block;
+  }
 }
 @media only screen and (max-width:540px){
   html{
     font-size: 45%;
   }
   
+    .product-main .pro-item {
+  
+      height: fit-content;
+      width: 15rem;
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0rem 0rem 0.5rem .1rem #ccc;
+    }
 
   .logo{
     display: inline-block;

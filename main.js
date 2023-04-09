@@ -13,6 +13,17 @@ var sidemeu = document.getElementById('sidemenu');
         sidemenu.style.right ='0px';
 
   }
+  
+/*let buttons = document.querySelectorAll('a');
+
+buttons.forEach(a =>{
+  a.addEventListener('click',function(){
+    this.classlist.add('active');
+    
+    buttons.addEventListener(btu => btu.classlist.remove('active'));
+  });
+});
+  */
 
 /*------------------------slider js----*/
 
