@@ -173,3 +173,29 @@ background-repeat: no-repeat;
     color: var(--lg-green);
     text-decoration: none;
 }
+
+/* ------hero section pages css------- */
+
+
+/* ------fetutres  section pages css------- */
+
+.fetures{
+    width: 100%;
+    display: grid;
+    grid-gap: 3rem;
+    padding: 0rem 2rem 0rem 2rem;
+    grid-template-columns: repeat(5,1fr) ;
+
+}
+.fetures .fetures-box{
+    background: #eee;
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fetures .fetures-box{
+    
+}
