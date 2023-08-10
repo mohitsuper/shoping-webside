@@ -1,38 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=League+Spartan:wght@500&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     font-family: 'League Spartan', sans-serif;
-    
+
     text-transform: capitalize;
 }
 
-:root{
-    --black:#222;
+:root {
+    --black: #222;
     --box-shadow: 0rem 0rem 2rem .1rem #ddd;
     --light-black: #1a1a1a;
     --lg-green: #088178;
     --margin-st: 3rem 0rem 3rem 0rem;
-    --padding-st:0rem 2.5rem 0rem 2.5rem
+    --padding-st: 0rem 2.5rem 0rem 2.5rem
 }
 
-html{
+html {
     font-size: 65.2%;
     scroll-behavior: smooth;
 }
 
-h1{
+h1 {
     font-size: 5rem;
     width: 100%;
     line-height: 6.4rem;
     color: var(--black);
 }
 
-h2{
+h2 {
     font-size: 4.6rem;
     line-height: 5.4rem;
     width: 100%;
@@ -40,7 +40,7 @@ h2{
     color: var(--black);
 }
 
-h4{
+h4 {
     font-size: 3.5rem;
     line-height: 2.5rem;
     width: 100%;
@@ -48,46 +48,47 @@ h4{
     color: #222;
 }
 
-h6{
+h6 {
     font-size: 1.2rem;
     font-weight: 600;
     width: 100%;
 
 }
 
-section{
-width: 100%;
-
-}
-.section-mg{
-    margin: 2rem 0rem 2rem 0rem;
-}
-
-.section-pg{
-    padding: 0rem 3rem 0rem 3rem;
-}
-
-
-p{
-    font-size: 2rem;
-    color:#465b52 ;
+section {
     width: 100%;
 
 }
 
-ion-icon{
+.section-mg {
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.section-pg {
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+
+p {
+    font-size: 2rem;
+    color: #465b52;
+    width: 100%;
+
+}
+
+ion-icon {
     font-size: 3rem;
     font-weight: 600;
 }
 
-body{
+body {
     font-size: 2.5rem;
     color: #222;
     background: #fff;
     width: 100%;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -95,11 +96,11 @@ body{
     position: fixed;
     background: #e3e6f3;
     padding: 2rem;
-    box-shadow: var(--box-shadow) ;
+    box-shadow: var(--box-shadow);
     justify-content: space-between;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     gap: 5rem;
@@ -109,26 +110,29 @@ body{
     position: relative;
 }
 
-.navbar li a{
+.navbar li a {
     text-decoration: none;
     font-size: 2.5rem;
     font-weight: 600;
-    
+
     color: var(--light-black);
 }
 
-.navbar li a.active::after , .navbar li a:hover::after{
+.navbar li a.active::after,
+.navbar li a:hover::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
     height: .4rem;
-    width:60%;
+    width: 60%;
     background: var(--lg-green);
 }
-.navbar li a:hover , .navbar li a.active{
-    color:var(--lg-green);
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: var(--lg-green);
     width: 100%;
 }
 
@@ -136,45 +140,46 @@ body{
 
 /* ------hero section pages css------- */
 
-.hero{
-    background: url("img/hero4.png") ;
-background-repeat: no-repeat;
+.hero {
+    background: url("img/hero4.png");
+    background-repeat: no-repeat;
     height: 100vh;
     background-position: top 15% right 0rem;
     background-size: cover;
     width: 100%;
+
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     padding-left: 8rem;
     gap: 2.5rem;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 9rem;
-    width:100%;
+    width: 100%;
     color: var(--lg-green);
 }
 
-.hero h4{
+.hero h4 {
     font-size: 4rem;
     padding-bottom: 3rem;
 }
 
-.hero h2{
+.hero h2 {
     font-size: 7rem;
 }
 
-.hero p{
+.hero p {
     font-size: 4rem;
     padding-bottom: 3rem;
 }
 
-.hero .btu{
+.hero .btu {
     padding: 1.4rem 8rem 1.4rem 6.5rem;
     background: url(img/logo/button.png);
-    transform:  scale(2);
+    transform: scale(2);
     font-size: 2rem;
     margin-left: 7rem;
     color: var(--lg-green);
@@ -186,17 +191,18 @@ background-repeat: no-repeat;
 
 /* ------fetutres  section pages css------- */
 
-.fetures{
+.fetures {
     width: 100%;
     padding: var(--padding-st);
     padding: 0rem 2rem 0rem 2rem;
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns:repeat(auto-fit, minmax(20rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
- 
+
 }
-.fetures .fetures-box{
+
+.fetures .fetures-box {
     padding: 4rem 2rem 4rem 2rem;
     background: #ffff;
     box-shadow: var(--box-shadow);
@@ -207,33 +213,36 @@ background-repeat: no-repeat;
     align-items: center;
 }
 
-.fetures .fetures-box h4{
+.fetures .fetures-box h4 {
     margin-top: 3rem;
     padding: 1rem;
-    color: #465b52; 
-text-align: center;
-border-radius: 1rem;
-background: #f8e0c1de;
-font-size: 2.5rem;
+    color: #465b52;
+    text-align: center;
+    border-radius: 1rem;
+    background: #f8e0c1de;
+    font-size: 2.5rem;
 }
-.fetures .fetures-box:nth-child(2) h4{
-    background:rgb(174, 235, 125);
-    }
 
-   
-    .fetures .fetures-box:nth-child(3) h4{
-        background:rgb(141, 208, 228);
-        }
-        .fetures .fetures-box:nth-child(4) h4{
-            background:rgb(228, 141, 141);
-            }
-            .fetures .fetures-box:nth-child(5) h4{
-                background:rgb(208, 141, 228);
-                }
-                
-                .fetures .fetures-box:nth-child(6) h4{
-                    background:rgb(156, 141, 228);
-                    }
+.fetures .fetures-box:nth-child(2) h4 {
+    background: rgb(174, 235, 125);
+}
+
+
+.fetures .fetures-box:nth-child(3) h4 {
+    background: rgb(141, 208, 228);
+}
+
+.fetures .fetures-box:nth-child(4) h4 {
+    background: rgb(228, 141, 141);
+}
+
+.fetures .fetures-box:nth-child(5) h4 {
+    background: rgb(208, 141, 228);
+}
+
+.fetures .fetures-box:nth-child(6) h4 {
+    background: rgb(156, 141, 228);
+}
 
 /* ----------------ferture section css end------------- */
 
@@ -241,31 +250,31 @@ font-size: 2.5rem;
 
 /* -----------product section css strat---------------- */
 
-.heading{
+.heading {
     text-align: center;
     width: 100%;
-    margin:var(--margin-st);
+    margin: var(--margin-st);
 }
 
-.products{
+.products {
     margin: var(--margin-st);
     flex-direction: wrap;
     display: flex;
-     /* justify-content: center;
+    /* justify-content: center;
     align-items: center;  */
     flex-direction: column;
     width: 100%;
 }
 
-.product{
+.product {
     display: grid;
     /* grid-template-columns:repeat(auto-fit, minmax(60rem,1fr)); */
-grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 3.5rem;
-    
-} 
 
- .product .pro-box{
+}
+
+.product .pro-box {
     border-radius: 2rem;
     padding: 2rem;
     background: #fff;
@@ -276,48 +285,50 @@ grid-template-columns: repeat(4,1fr);
     box-shadow: var(--box-shadow);
 }
 
-.pro-box img{
+.pro-box img {
     border-radius: 2rem;
-width: 100%;
+    width: 100%;
 }
-.pro-box .pro-text{
+
+.pro-box .pro-text {
     line-height: 5rem;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
 }
-.pro-box .pro-text span{
+
+.pro-box .pro-text span {
     font-size: 2rem;
     color: #465b52;
 }
 
-.pro-box .pro-text h4{
-color: var(--light-black);
-font-weight: 500;
-font-size: 2.5rem;
-}
-
-.pro-box .pro-text h4 ion-icon{
+.pro-box .pro-text h4 {
+    color: var(--light-black);
+    font-weight: 500;
     font-size: 2.5rem;
-    margin:.6rem 0rem .2rem 0rem;
+}
+
+.pro-box .pro-text h4 ion-icon {
+    font-size: 2.5rem;
+    margin: .6rem 0rem .2rem 0rem;
     color: #d9f345;
-    
+
 }
 
-.pro-box .pro-text h5{
-font-size: 2.5rem;
-font-weight: 500;
-color: var(--lg-green);
+.pro-box .pro-text h5 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--lg-green);
 }
 
-.pro-box a{
-     bottom: 2rem;
-     right: 2rem;
-     color: var(--lg-green);
-     background: #e3e6f3;
-     padding: 1.5rem;
-     border: 1pa solid #ddd;
-     border-radius: 5rem;
+.pro-box a {
+    bottom: 2rem;
+    right: 2rem;
+    color: var(--lg-green);
+    background: #e3e6f3;
+    padding: 1.5rem;
+    border: 1pa solid #ddd;
+    border-radius: 5rem;
     position: absolute;
 }
 
@@ -327,24 +338,24 @@ color: var(--lg-green);
 
 /* -----------benner section css strat---------------- */
 
-.btu{
-     /* cursor: pointer; */
+.btu {
+    /* cursor: pointer; */
     color: #333;
     text-decoration: none;
- background:#eee;
- border-radius: .5rem;
- transition:   0.5s background;
- font-size: 2rem;
+    background: #eee;
+    border-radius: .5rem;
+    transition: 0.5s background;
+    font-size: 2rem;
     padding: 1rem 2rem 1rem 2rem;
-} 
+}
 
-.btu:hover{
+.btu:hover {
     color: #eee;
     background: #088178;
 }
 
-#benner{
-    display:flex;
+#benner {
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -359,25 +370,110 @@ color: var(--lg-green);
     background-size: cover;
 }
 
-#benner h4{
+#benner h4 {
     color: #eee;
     font-weight: 500;
     margin-bottom: 2rem;
 }
 
-#benner h2{
+#benner h2 {
     color: #eee;
     font-weight: 400;
     margin-bottom: 2rem;
 }
 
-#benner h2 span{
-    color:rgb(241, 95, 95);
+#benner h2 span {
+    color: rgb(241, 95, 95);
     font-weight: 500;
     margin-bottom: 2rem;
 }
 
 
-.benner-1{
+.benner-1 {
     background: url("img/banner/b2.jpg");
+}
+
+
+
+#se-benner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+#se-benner div .benner-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+        padding-left:8rem ;
+    line-height: 5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   background: url(img/banner/2.jpg)  no-repeat;
+   
+}
+
+
+#se-benner div .benner-box h4{
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+#se-benner div .benner-box h2{
+    color:var(--light-black);
+}
+
+#se-benner div .benner-box span{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#se-benner .row-1{
+display: flex;
+flex-direction: row; 
+gap: 1rem;
+}
+
+#se-benner .row-1 .benner-box:nth-child(1) {
+    background: url("img/banner/2.jpg") no-repeat  center;
+    background-size: cover;
+}
+
+
+#se-benner .row-1 .benner-box:nth-child(2) {
+    background: url("img/banner/b3.jpg") no-repeat  center;
+    background-size: cover;
+}
+
+
+#se-benner .row-2 .benner-box:nth-child(1) {
+    background: url("img/banner/b4.jpg") no-repeat  center;
+    background-size: cover;
+}
+
+#se-benner .row-2 .benner-box:nth-child(2) {
+    background: url("img/banner/b17.jpg") no-repeat  center;
+    background-size: cover;
+}
+
+#se-benner .row-2 .benner-box:nth-child(3) {
+    background: url("img/banner/b7.jpg") no-repeat  center;
+    background-size: cover;
+}
+
+#se-benner .row-2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    width: 100%;
 }
