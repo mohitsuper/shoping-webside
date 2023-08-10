@@ -16,10 +16,12 @@
     --box-shadow: 0rem 0rem 2rem .1rem #ddd;
     --light-black: #1a1a1a;
     --lg-green: #088178;
+    --margin-st: 3rem 0rem 3rem 0rem;
+    --padding-st:0rem 2.5rem 0rem 2.5rem
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 65.2%;
     scroll-behavior: smooth;
 }
 
@@ -60,6 +62,11 @@ width: 100%;
 .section-mg{
     margin: 2rem 0rem 2rem 0rem;
 }
+
+.section-pg{
+    padding: 0rem 3rem 0rem 3rem;
+}
+
 
 p{
     font-size: 2rem;
@@ -181,14 +188,18 @@ background-repeat: no-repeat;
 
 .fetures{
     width: 100%;
+    padding: var(--padding-st);
+    padding: 0rem 2rem 0rem 2rem;
     display: grid;
     grid-gap: 3rem;
-    padding: 0rem 2rem 0rem 2rem;
-    grid-template-columns: repeat(5,1fr) ;
+    grid-template-columns:repeat(auto-fit, minmax(20rem,1fr));
 
+ 
 }
 .fetures .fetures-box{
-    background: #eee;
+    padding: 4rem 2rem 4rem 2rem;
+    background: #ffff;
+    box-shadow: var(--box-shadow);
     display: flex;
     border-radius: 1rem;
     flex-direction: column;
@@ -196,6 +207,120 @@ background-repeat: no-repeat;
     align-items: center;
 }
 
-.fetures .fetures-box{
+.fetures .fetures-box h4{
+    margin-top: 3rem;
+    padding: 1rem;
+    color: #465b52; 
+text-align: center;
+border-radius: 1rem;
+background: #f8e0c1de;
+font-size: 2.5rem;
+}
+.fetures .fetures-box:nth-child(2) h4{
+    background:rgb(174, 235, 125);
+    }
+
+   
+    .fetures .fetures-box:nth-child(3) h4{
+        background:rgb(141, 208, 228);
+        }
+        .fetures .fetures-box:nth-child(4) h4{
+            background:rgb(228, 141, 141);
+            }
+            .fetures .fetures-box:nth-child(5) h4{
+                background:rgb(208, 141, 228);
+                }
+                
+                .fetures .fetures-box:nth-child(6) h4{
+                    background:rgb(156, 141, 228);
+                    }
+
+/* ----------------ferture section css end------------- */
+
+
+
+/* -----------product section css strat---------------- */
+
+.heading{
+    text-align: center;
+    width: 100%;
+    margin:var(--margin-st);
+}
+
+.products{
+    margin: var(--margin-st);
     
+    display: flex;
+     /* justify-content: center;
+    align-items: center;  */
+    flex-direction: column;
+    width: 100%;
+}
+
+.product{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(60rem,1fr));
+    grid-gap: 5rem;
+    /* display: flex;
+    flex-direction: row;
+    gap:5rem;
+     justify-content: center; 
+    flex-wrap: wrap; */
+} 
+
+ .product .pro-box{
+    border-radius: 2rem;
+    padding: 2rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.pro-box img{
+    border-radius: 2rem;
+
+}
+.pro-box .pro-text{
+    line-height: 5rem;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.pro-box .pro-text span{
+    font-size: 2rem;
+    color: #465b52;
+}
+
+.pro-box .pro-text h4{
+color: var(--light-black);
+font-weight: 600;
+font-size: 4rem;
+font-weight: 600;
+}
+
+.pro-box .pro-text h4 ion-icon{
+    font-size: 2.5rem;
+    margin:.6rem 0rem .2rem 0rem;
+    color: #d9f345;
+    
+}
+
+.pro-box .pro-text h5{
+font-size: 2.5rem;
+font-weight: 500;
+color: var(--lg-green);
+}
+
+.pro-box a{
+     bottom: 2rem;
+     right: 2rem;
+     color: var(--lg-green);
+     background: #e3e6f3;
+     padding: 1.5rem;
+     border: 1pa solid #ddd;
+     border-radius: 5rem;
+    position: absolute;
 }
