@@ -41,7 +41,7 @@ h2{
 }
 
 h4{
-    font-size: 2rem;
+    font-size: 3.5rem;
     line-height: 2.5rem;
     width: 100%;
 
@@ -249,7 +249,7 @@ font-size: 2.5rem;
 
 .products{
     margin: var(--margin-st);
-    
+    flex-direction: wrap;
     display: flex;
      /* justify-content: center;
     align-items: center;  */
@@ -259,13 +259,10 @@ font-size: 2.5rem;
 
 .product{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(60rem,1fr));
-    grid-gap: 5rem;
-    /* display: flex;
-    flex-direction: row;
-    gap:5rem;
-     justify-content: center; 
-    flex-wrap: wrap; */
+    /* grid-template-columns:repeat(auto-fit, minmax(60rem,1fr)); */
+grid-template-columns: repeat(4,1fr);
+    grid-gap: 3.5rem;
+    
 } 
 
  .product .pro-box{
@@ -281,7 +278,7 @@ font-size: 2.5rem;
 
 .pro-box img{
     border-radius: 2rem;
-
+width: 100%;
 }
 .pro-box .pro-text{
     line-height: 5rem;
@@ -296,9 +293,8 @@ font-size: 2.5rem;
 
 .pro-box .pro-text h4{
 color: var(--light-black);
-font-weight: 600;
-font-size: 4rem;
-font-weight: 600;
+font-weight: 500;
+font-size: 2.5rem;
 }
 
 .pro-box .pro-text h4 ion-icon{
@@ -323,4 +319,65 @@ color: var(--lg-green);
      border: 1pa solid #ddd;
      border-radius: 5rem;
     position: absolute;
+}
+
+
+/* -----------product section css strat---------------- */
+
+
+/* -----------benner section css strat---------------- */
+
+.btu{
+     /* cursor: pointer; */
+    color: #333;
+    text-decoration: none;
+ background:#eee;
+ border-radius: .5rem;
+ transition:   0.5s background;
+ font-size: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+} 
+
+.btu:hover{
+    color: #eee;
+    background: #088178;
+}
+
+#benner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    line-height: 5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* padding: 4rem 0rem 4rem 0rem; */
+    /* max-height: 25rem */
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#benner h4{
+    color: #eee;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#benner h2{
+    color: #eee;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#benner h2 span{
+    color:rgb(241, 95, 95);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+
+.benner-1{
+    background: url("img/banner/b2.jpg");
 }
