@@ -16,6 +16,7 @@
     --box-shadow: 0rem 0rem 2rem .1rem #ddd;
     --light-black: #1a1a1a;
     --lg-green: #088178;
+    --creem: #e9bf71;
     --margin-st: 3rem 0rem 3rem 0rem;
     --padding-st: 0rem 2.5rem 0rem 2.5rem
 }
@@ -393,6 +394,15 @@ body {
     background: url("img/banner/b2.jpg");
 }
 
+.benner-2 {
+    background: url("img/banner/1.jpg") no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 40vh;
+    /* justify-content: center;
+    align-items: flex-start; */
+}
 
 
 #se-benner{
@@ -449,6 +459,15 @@ gap: 1rem;
     background-size: cover;
 }
 
+#se-benner div .benner-box .btu{
+    background: transparent;
+    border: .3rem solid #eee;
+    color: #eee;
+    padding: .4rem 2rem .4rem 2rem;
+    font-size: 700;
+    font-size: 2.5rem;
+    
+}
 
 #se-benner .row-1 .benner-box:nth-child(2) {
     background: url("img/banner/b3.jpg") no-repeat  center;
@@ -476,4 +495,56 @@ gap: 1rem;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 1rem;
     width: 100%;
+}
+
+
+#sing-in{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+ .benner-box{
+    width: fit-content;
+    display: flex;
+    flex: 1 1 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+    color: #eee;
+    height: 100%;
+
+}
+
+.benner-box h2{
+color: #eee;
+font-weight: 500;
+margin-bottom: 1rem;
+}
+
+.benner-box h3{
+color:var(--creem);
+font-weight: 400;
+font-size: 3.5rem;
+}
+
+.email-box{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.email-box input{
+    background: #eee;
+    padding: 0rem 2rem 0rem 2rem ;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.email-box .btu{
+background: var(--lg-green);
+color: #eee;
 }
