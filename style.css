@@ -102,14 +102,20 @@ body {
     position: fixed;
     background: #e3e6f3;
     padding: 2rem;
+    transition: 0.5rem;
+
     box-shadow: var(--box-shadow);
     justify-content: space-between;
 }
-
+#sidemenu{
+    transition: 0.5rem;
+transition: all 0.5s;
+}
 .navbar {
     display: flex;
     flex-direction: row;
     gap: 5rem;
+    z-index: 100;
 }
 
 .navbar li {
@@ -143,6 +149,10 @@ body {
 }
 
 
+
+#menu-btu{
+    display: none;
+}
 
 /* ------hero section pages css------- */
 
@@ -655,5 +665,41 @@ font-size: 1.8rem;
     width: 100%;
     padding: 2rem;
     text-align: center;
+    
+}
+
+
+@media (max-width:600px){
+    .navbar{
+     flex-direction: column;
+     position:fixed;
+     background: #eee;
+     padding: 2rem;
+    right: 100%;
+     width: 100%;
+     text-align: center;
+     top: 0;
+     padding-top: 4rem;
+     height: 100vh;
+    }
+
+    #menu-btu{
+        display: block;
+    }
+
+
+    .navbar li a.active::after,
+.navbar li a:hover::after {
+    content: "";
+    background: transparent;
+    display: none;
+}
+
+    .close{
+        position: absolute;
+        top:2rem;
+        left: 2rem;
+    }
+
     
 }
