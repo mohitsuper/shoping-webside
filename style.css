@@ -17,6 +17,7 @@
     --light-black: #1a1a1a;
     --lg-green: #088178;
     --creem: #e9bf71;
+    --red:#e48383;
     --margin-st: 3rem 0rem 3rem 0rem;
     --padding-st: 0rem 2.5rem 0rem 2.5rem
 }
@@ -24,6 +25,10 @@
 html {
     font-size: 65.2%;
     scroll-behavior: smooth;
+}
+
+span{
+   color: var(--creem); 
 }
 
 h1 {
@@ -394,15 +399,6 @@ body {
     background: url("img/banner/b2.jpg");
 }
 
-.benner-2 {
-    background: url("img/banner/1.jpg") no-repeat;
-    background-size: cover;
-    background-position: right;
-    width: 100%;
-    height: 40vh;
-    /* justify-content: center;
-    align-items: flex-start; */
-}
 
 
 #se-benner{
@@ -410,12 +406,14 @@ body {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
+    gap: 2.5rem;
 }
 #se-benner div .benner-box{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    
     border-radius: .5rem;
     overflow: hidden;
         padding-left:8rem ;
@@ -451,7 +449,7 @@ body {
 #se-benner .row-1{
 display: flex;
 flex-direction: row; 
-gap: 1rem;
+gap: 2.5rem;
 }
 
 #se-benner .row-1 .benner-box:nth-child(1) {
@@ -493,27 +491,56 @@ gap: 1rem;
 #se-benner .row-2{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 1rem;
+    grid-gap: 2.5rem;
     width: 100%;
+    padding-left: 0rem;
 }
 
+#se-benner .row-2 .benner-box{
+    padding-left: 4rem;
+}
 
-#sing-in{
+#se-benner .row-2 span{
+    color: var(--red);
+}
+/* ------------newletter section css ------------ */
+
+.benner-2 {
+    background: url("img/banner/b14.png") no-repeat;
+    background-size: cover;
+    background:#0a1338;
+    background-position: 20% 30%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    height: 25vh;
+    
+   }
 
-}
 
- .benner-box{
-    width: fit-content;
+/* #newsletter{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-img: url("img/banner/b14.png") ;
+   background-position: left;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   background: #000;
+} */
+
+
+#newsletter .benner-box{
+    
     display: flex;
     flex: 1 1 40rem;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 3rem;
     color: #eee;
+    padding-top: 3.5rem;
+    padding-left: 8rem;
     height: 100%;
 
 }
@@ -521,23 +548,30 @@ gap: 1rem;
 .benner-box h2{
 color: #eee;
 font-weight: 500;
+font-size: 3.5rem;
+margin:0;
 margin-bottom: 1rem;
 }
 
-.benner-box h3{
-color:var(--creem);
+.benner-box p{
+color:#ddd;
 font-weight: 400;
-font-size: 3.5rem;
+font-size: 2rem;
 }
 
-.email-box{
+ .benner-2 .benner-box p span{
+    color:var(--creem);
+}
+
+#newsletter .email-box{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0rem;
+    padding-right: 8rem;
 }
 .email-box input{
     background: #eee;
-    padding: 0rem 2rem 0rem 2rem ;
+    padding: 1.5rem 2rem 2rem 1.5rem ;
     border: none;
     outline: none;
     font-size: 2rem;
@@ -547,4 +581,79 @@ font-size: 3.5rem;
 .email-box .btu{
 background: var(--lg-green);
 color: #eee;
+font-size: 1.5rem;
+padding-top: 2rem;
+}
+
+
+
+/*-----------------footer section csss---------*/
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10rem;
+    margin: 8rem 0rem 1rem 0rem;
+    flex-direction: row;
+}
+
+footer .col{
+    line-height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col img{
+    margin-bottom: 3rem;
+    /* display: inline-block; */
+    width: 20rem;
+
+}
+
+footer .col h4{
+font-size: 2.3rem;
+margin-bottom: 1rem;
+}
+
+footer .col .row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 3rem;
+    margin: 1rem 1rem;
+
+}
+
+footer .col .row img{
+    width: 8rem;
+    padding: 0;
+    margin: 0;
+}
+footer .col a{
+    font-size: 2rem;
+    color: #555;
+    font-weight: 500;
+    text-decoration: none;
+}
+footer .col .icons{
+    margin-top: 3rem;
+}
+
+footer .col .icons h4{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+footer .col .icons .icon ion-icon{
+font-size: 1.8rem;
+}
+
+
+ .copyright{
+    background: #eee;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    
 }
