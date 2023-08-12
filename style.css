@@ -609,7 +609,7 @@ margin: 2rem 0rem 2rem 0rem;
 .blog-main .blog-details a:after{
     content: "";
     position: absolute;
-    right:-9rem;
+    right:-8rem;
     top:1.3rem;
     height: .4rem;
     width: 8rem;
@@ -1033,7 +1033,14 @@ html{
   font-size:1rem;
 }
 
+.blog-main{
+    flex-direction: column;
+    gap: 0rem;
+}
 
+.blog-main .blog-details{
+    flex:1 1 20rem
+}
     
 .hero{
   background-size: cover;
