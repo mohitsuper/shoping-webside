@@ -524,16 +524,77 @@ font-size: 2rem;
 #page-header .page-main{
     width: 100%;
     filter: brightness(0.7);
-    background: url('img/banner/b1.jpg');
-    padding: 6rem 0rem 6rem;
-
+    
 }
 
 #page-header  .page-main .benner-3{
+    padding: 6rem 0rem 6rem;
+    background: url('img/banner/b1.jpg');
+    background-size: cover;
+    background-position: center;
     width: 100%;
     text-align: center;
     color: #eee;
 }
+
+#blog{
+    display: flex;
+    width: 100%;
+    padding: 7rem;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.blog-main{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    position: relative;
+}
+
+#blog .blog-main h1{
+    position: absolute;
+    top:   -4rem;
+    left: 0rem;
+    font-size: 7rem;
+    font-weight: 700;
+    color: #eee;
+
+}
+
+.blog-main .blog-img{
+    display: flex;
+    flex:1 1 40rem;
+    
+     z-index: 100;
+    
+}
+
+.blog-main .blog-img img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.blog-main .blog-details{
+ flex: 1 1 40rem;
+ justify-content: center;
+ align-items: flex-start;
+ display: flex;
+ flex-direction: column;
+}
+
+/* #page-header  .page-main .benner-4{
+    padding: 6rem 0rem 6rem;
+    background: url('img/banner/b19.jpg');
+    width: 100%;
+    text-align: center;
+    color: #eee;
+} */
+
+
+
 
 #page-header  .page-main .benner-3 h1{
 color: #eee;
@@ -542,7 +603,7 @@ margin-bottom: 1rem;
 }
 
 #page-header  .page-main .benner-3 p{
-color: #eee;
+color: #f3f1f1;
 font-weight: 500;
 font-size: 2.5rem;
 }
