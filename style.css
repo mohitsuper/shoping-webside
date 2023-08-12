@@ -17,6 +17,7 @@
     --light-black: #1a1a1a;
     --lg-green: #088178;
     --creem: #e9bf71;
+    --lg-blue: #2FDEC2;
     --red:#e48383;
     --margin-st: 3rem 0rem 3rem 0rem;
     --padding-st: 0rem 2.5rem 0rem 2.5rem
@@ -71,7 +72,7 @@ section {
 }
 
 .section-pg {
-    padding: 0rem 3rem 0rem 3rem;
+    padding: 0rem 2rem 0rem 2rem;
 }
 
 
@@ -104,7 +105,7 @@ body {
     padding: 2rem;
     transition: 0.5rem;
 
-    box-shadow: var(--box-shadow);
+    box-shadow: 0rem 0rem 1rem .1rem #bbb;
     justify-content: space-between;
 }
 #sidemenu{
@@ -315,7 +316,7 @@ transition: all 0.5s;
 
 .pro-box .pro-text span {
     font-size: 2rem;
-    color: #465b52;
+    color: #e2a637;
 }
 
 .pro-box .pro-text h4 {
@@ -342,14 +343,141 @@ transition: all 0.5s;
     right: 2rem;
     color: var(--lg-green);
     background: #e3e6f3;
-    padding: 1.5rem;
-    border: 1pa solid #ddd;
+    padding: 1rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 5rem;
     border-radius: 5rem;
     position: absolute;
 }
 
+.pro-box a ion-icon{
+    font-size: 2rem;
+}
 
-/* -----------product section css strat---------------- */
+
+/* -----------product section css end---------------- */
+
+/*-----style in sproduct.html page---*/
+.single-product{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+  }
+  
+  .single-product p{
+    text-align: center;
+  }
+  
+  .single-product .single-product-main{
+    display: flex;
+    width: 100%;
+        gap:3rem;
+        padding:0rem 3rem 0rem 3rem ;
+        justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.5s;
+    flex-direction: row;
+  }
+  
+  .single-product .single-product-main .single-product-img{
+      gap:1rem;
+  flex:1 1 40rem;
+  transition: all 0.5s;
+ 
+    flex-direction: column;
+    width:100%;
+  }
+  
+  
+  .single-product .single-product-main  .single-product-detile{
+    display:flex;
+    flex:1 1 40rem;
+    width:100%;
+  line-height: 3.5rem;
+    flex-direction: column;
+  }
+  
+  .single-product .single-product-main .single-product-img .single-product-main-img{
+       display:flex;
+       transition: all 0.5s;
+ 
+  }
+  
+  
+  .single-product .single-product-main .single-product-img .single-product-main-img img{
+    width:100%;
+    margin-bottom: 1rem
+  }
+  .single-product .single-product-main .single-product-img .single-product-row-img{
+      flex-basis: 28%;
+     display:flex;
+     gap:1rem;
+  }
+  
+  
+  .single-product .single-product-main .single-product-img .single-product-row-img img{
+    width: 100%;
+  }
+  
+  .single-product .single-product-main .single-product-detile h6 {
+   font-size: 3rem;
+   font-weight: 200;
+   line-height: 6rem;
+  }
+  .single-product .single-product-main .single-product-detile h4{
+    font-size: 2.5rem;
+    color:#333;
+    font-weight: 500;
+    margin:3rem 0 3rem 0;
+  }
+  
+  .single-product .single-product-main .single-product-detile h1{
+    font-size: 4rem;
+    font-weight: 100;
+    color:#333;
+  }
+  
+  .single-product .single-product-main .single-product-detile .number{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  
+  .single-product .single-product-main .single-product-detile select{
+    padding: 1.8rem;
+    font-size: 2rem;
+    margin: 1rem 1.5rem 0rem  0rem;
+    width: 30%;
+    outline: none;
+  }
+  .single-product .single-product-main .single-product-detile input {
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 30%;
+    font-size: 2rem;
+    outline: none;
+  }
+  
+  .single-product .single-product-main .single-product-detile .button{
+    width: 40%;
+    padding: 1rem;
+font-size: 2rem;
+    border-radius: 1rem;
+      margin: 3rem 0rem 3rem 0rem  ;
+  background: #2FDEC2;
+  border: none;
+  color: #fff;
+  }
+  .single-product .single-product-main .single-product-detile .button:hover{
+    background: #2B9D8B;
+  
+  }
+/* -------------single page css ebd--------   */
+
 
 
 /* -----------benner section css strat---------------- */
@@ -413,9 +541,10 @@ font-weight: 500;
 margin-bottom: 1rem;
 }
 
-#page-header  .page-main .benner-3 h2{
+#page-header  .page-main .benner-3 p{
 color: #eee;
-font-weight: 400;
+font-weight: 500;
+font-size: 2.5rem;
 }
 
 
@@ -441,7 +570,7 @@ font-weight: 400;
     font-size: 2rem;
     color: #eee;
     text-decoration: none;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 .page-num a ion-icon{
     font-size: 2rem;
