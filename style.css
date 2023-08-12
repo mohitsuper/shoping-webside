@@ -385,6 +385,77 @@ transition: all 0.5s;
     background-size: cover;
 }
 
+#page-header{
+    padding-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+#page-header .page-main{
+    width: 100%;
+    filter: brightness(0.7);
+    background: url('img/banner/b1.jpg');
+    padding: 6rem 0rem 6rem;
+
+}
+
+#page-header  .page-main .benner-3{
+    width: 100%;
+    text-align: center;
+    color: #eee;
+}
+
+#page-header  .page-main .benner-3 h1{
+color: #eee;
+font-weight: 500;
+margin-bottom: 1rem;
+}
+
+#page-header  .page-main .benner-3 h2{
+color: #eee;
+font-weight: 400;
+}
+
+
+#page-nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.page-num{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+
+.page-num a{
+    background: var(--lg-green);
+    padding: 2.5rem;
+    font-size: 2rem;
+    color: #eee;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+.page-num a ion-icon{
+    font-size: 2rem;
+}
+
+.page-num a:hover{
+    background: #086861;
+    }
+    
+
+.green-ho:hover{
+background: #086861;
+}
+
 #benner h4 {
     color: #eee;
     font-weight: 500;
