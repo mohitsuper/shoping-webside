@@ -160,7 +160,7 @@ transition: all 0.5s;
     background: url("img/hero4.png");
     background-repeat: no-repeat;
     height: 100vh;
-    background-position: top 15% right 0rem;
+    background-position: top 0% right 0rem;
     background-size: cover;
     width: 100%;
 
@@ -379,9 +379,8 @@ transition: all 0.5s;
     line-height: 5rem;
     flex-direction: column;
     flex-wrap: wrap;
-    /* padding: 4rem 0rem 4rem 0rem; */
+     padding: 4rem 0rem 4rem 0rem; 
     /* max-height: 25rem */
-    height: 40vh;
     background-position: center;
     background-size: cover;
 }
@@ -426,11 +425,11 @@ transition: all 0.5s;
     
     border-radius: .5rem;
     overflow: hidden;
+    padding: 2rem 0rem 2rem 0rem;
         padding-left:8rem ;
     line-height: 5rem;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 40vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -525,8 +524,8 @@ gap: 2.5rem;
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 25vh;
-    
+    padding: 2rem 0rem 2rem 0rem ;
+    flex-wrap: wrap;
    }
 
 
@@ -551,6 +550,7 @@ gap: 2.5rem;
     color: #eee;
     padding-top: 3.5rem;
     padding-left: 8rem;
+    margin-bottom: 1.3rem;
     height: 100%;
 
 }
@@ -577,11 +577,13 @@ font-size: 2rem;
     display: flex;
     flex-direction: row;
     gap: 0rem;
-    padding-right: 8rem;
+    justify-content: center;
+    align-content: center;
 }
 .email-box input{
     background: #eee;
-    padding: 1.5rem 2rem 2rem 1.5rem ;
+    padding: 1.5rem 2rem 2rem 1.5rem ;   justify-content: center;
+        align-content: center; 
     border: none;
     outline: none;
     font-size: 2rem;
@@ -667,7 +669,11 @@ font-size: 1.8rem;
     text-align: center;
     
 }
-
+@media (max-width: 768px){
+  product{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
 
 @media (max-width:600px){
     .navbar{
@@ -700,6 +706,57 @@ font-size: 1.8rem;
         top:2rem;
         left: 2rem;
     }
+    
+.product {
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+}
+
+.product .pro-box{
+  font-size:1rem;
+}
+
 
     
+.hero{
+  background-size: cover;
+  background-position: top 5rem right -30rem;
+  padding-left: 2rem;
+  height: 100vh;
+  font-size: 3rem;
+  line-height: 1.5rem;
+  
+}
+
+.hero h4{
+  font-size: 2rem;
+  padding-bottom: 0;
+    line-height: 1rem;
+
+}
+
+.hero h2{
+  font-size: 2.5rem;
+  margin: 0;
+    line-height: 1.5rem;
+
+  font-weight: 600;
+}
+
+.hero h1{
+  font-size: 3.5rem;
+    line-height: 1.5rem;
+
+}
+.hero p{
+  font-size: 1.8rem;
+ padding-bottom: .5rem;
+}
+.hero .btu{
+  margin-left: 2rem;
+  font-size: .5rem;
+  padding: .5rem;
+  color:#eee;
+background: var(--lg-green);
+}
 }
