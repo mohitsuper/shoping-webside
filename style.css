@@ -232,7 +232,7 @@ transition: all 0.5s;
 
 .about .about-main .about-img{
     display: flex;
-    flex:1 1    40rem;
+    flex:0 0 60rem;
 }
 
 .about .about-main .about-img img{
@@ -243,9 +243,12 @@ transition: all 0.5s;
 .about .about-main .about-text{
     flex-direction: column;
     flex:  1 1 40rem;
+    height: 60%;
+    justify-content: center;
+    align-items: flex-start;
     display: flex;
-    padding-top: 3rem;
-    line-height: 2rem;
+    line-height: 3rem;
+    
 }
 
 .about .about-main .about-text h1{
@@ -991,6 +994,82 @@ color: #eee;
 font-size: 1.5rem;
 padding-top: 2rem;
 }
+
+
+/*-----------------contact section csss---------*/
+
+.contact{
+    display: flex;
+    width: 100%;
+}
+
+.contact-main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+    width: 100%;
+}
+
+.contact-main .details{
+    display: flex;
+    flex: 1 1  40rem;
+    flex-direction: column;
+    line-height: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-main .details span{
+margin-bottom: 1rem;
+}
+
+.contact-main .details li{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem  0rem 2rem 0rem;
+    gap: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.contact-main .map{
+    display: flex;
+    flex: 1 1 40rem;
+}
+
+.contact-main .map iframe{
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form form .input-box{
+    padding: 1rem;
+    background: #eee;
+    border: none;
+    outline: none;
+}
+
+form .btu{
+    width: 25%;
+    border: none;
+    background: var(--lg-green);
+    color: #eee;
+
+}
+/*-----------------contact section css end ---------*/
 
 
 
