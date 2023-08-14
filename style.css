@@ -104,10 +104,22 @@ body {
     background: #e3e6f3;
     padding: 2rem;
     transition: 0.5rem;
-
+ 
     box-shadow: 0rem 0rem 1rem .1rem #bbb;
     justify-content: space-between;
 }
+
+.header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.header div a{
+    color: #333;
+}
+
 #sidemenu{
     transition: 0.5rem;
 transition: all 0.5s;
@@ -205,6 +217,71 @@ transition: all 0.5s;
 
 /* ------hero section pages css------- */
 
+/* ------about pages css------- */
+.about{
+    display: flex;
+    width: 100%;
+}
+
+.about .about-main{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about .about-main .about-img{
+    display: flex;
+    flex:1 1    40rem;
+}
+
+.about .about-main .about-img img{
+    width: 100%;
+
+}
+
+.about .about-main .about-text{
+    flex-direction: column;
+    flex:  1 1 40rem;
+    display: flex;
+    padding-top: 3rem;
+    line-height: 2rem;
+}
+
+.about .about-main .about-text h1{
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.about .about-main .about-text p{
+    color: #666;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+}
+
+.about .about-main .about-text abbr{
+    line-height: 2.3rem;
+    font-weight: 600;
+    color: #777;
+}
+.about .about-main .about-text marquee{
+    padding: .5rem 0rem .5rem 0rem;
+}
+
+.app-dow{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.app-dow .video{
+    display: flex;
+    margin-top: 2rem;
+}
+.app-dow .video iframe{
+    height: 50rem;
+    width: 100%;
+}
+/* ------about pages css end------- */
 
 /* ------fetutres  section pages css------- */
 
