@@ -262,6 +262,12 @@ transition: all 0.5s;
 }
 
 /* ----------------ferture section css end------------- */
+/*------about page css_-----------*/
+.about{
+  display: flex;
+  width: 100%;
+}
+
 
 
 
