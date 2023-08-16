@@ -1050,21 +1050,70 @@ margin-bottom: 1rem;
 
 .form-main{
     display: flex;
-    
+    gap: 2rem;
+    /* height: 40rem; */
+    flex-wrap: wrap;
+    padding-top: 2rem;
 }
 
-.form form{
+.form-main .review{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 2rem;
+    overflow:scroll;
+    flex: 0 0 40rem;
+    overflow-x: hidden;
+    -webkit-text-stroke-color: none;
+}
+
+.form-main .review-box{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.form-main .review-box .img{
+flex: 1 1 40rem;
+display: flex;
+}
+.form-main .review-box .img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.form-main .review-box .review-text h1{
+font-size: 2rem;
+line-height: 2rem;
+}
+
+.form-main .review-box .review-text p{
+    font-size: 1.5rem;
+}
+
+.form-main .review-box .review-text h6 ion-icon{
+    font-size: 1.5rem;
+    color: #d9f345;
+}
+.form-main form{
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
+    flex: 1 1 50rem;
 }
 
-.form form .input-box{
+.form-main form .input-box{
     padding: 1rem;
-    background: #eee;
+    background: #fff;
     border: none;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: .3rem;
     outline: none;
+}
+
+.form-main form  .input-box.textarea{
+    width: 100%;
 }
 
 form .btu{
