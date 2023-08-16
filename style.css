@@ -445,6 +445,93 @@ transition: all 0.5s;
 
 
 /* -----------product section css end---------------- */
+/* -----------card section css end---------------- */
+
+#card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+td{
+    /* margin: 4rem; */
+}
+
+ thead{
+    padding: 4rem;
+    text-align: center;
+    border: 1rem soild #333;
+}
+table{
+    border-spacing: 2rem;
+    text-align: center;
+    overflow: scroll;
+   }
+
+table tbody td img{
+width: 100px;
+}
+
+table tbody td input{
+    width: 10rem;
+    padding: 2rem;
+}
+
+table tbody td{
+font-size: 1.8rem;
+}
+
+table tbody td ion-icon{
+    display: block;
+    padding: 0;
+}
+
+
+#card-app{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    width: 100%;
+}
+.card-app{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#copen{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.email-box{
+    display: flex;
+    gap: .5rem;
+
+}
+
+#total{
+    border: 1px solid #eee;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#total table{
+    text-align: left;
+    padding: 0;
+    
+}
+
+#total table tr td{
+    border: 1px solid #eee;
+    padding: 1rem;
+
+}
+/* -----------card section css end---------------- */
 
 /*-----style in sproduct.html page---*/
 .single-product{
@@ -972,7 +1059,7 @@ font-size: 2rem;
 #newsletter .email-box{
     display: flex;
     flex-direction: row;
-    gap: 0rem;
+    gap: .3rem;
     justify-content: center;
     align-content: center;
 }
@@ -1265,6 +1352,27 @@ html{
 .blog-main .blog-details{
     flex:1 1 20rem
 }
+
+#card{
+    width: 100%;
+}
+#card table{
+    overflow: hidden;
+    width: 100%;
+
+    /* overflow-y: hidden; */
+}
+
+.card-app{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#newsletter .benner-2{
+flex-direction: column;
+display: flex;
+gap: 2rem;
+} 
     
 .hero{
   background-size: cover;
