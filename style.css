@@ -1373,7 +1373,11 @@ flex-direction: column;
 display: flex;
 gap: 2rem;
 } 
-    
+
+#se-benner .row-1{
+    flex-direction: column;
+}
+
 .hero{
   background-size: cover;
   background-position: top 5rem right -30rem;
